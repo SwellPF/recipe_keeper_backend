@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# Seed data for Category
+appetizer = Category.create(name: "Appetizer")
+breakfast = Category.create(name: "Breakfast")
+entree = Category.create(name: "Entree")
+soup = Category.create(name: "Soup and Stew")
+dessert = Category.create(name: "Dessert")
