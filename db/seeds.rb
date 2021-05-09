@@ -12,3 +12,12 @@ breakfast = Category.create(name: "Breakfast")
 entree = Category.create(name: "Entree")
 soup = Category.create(name: "Soup and Stew")
 dessert = Category.create(name: "Dessert")
+
+
+# Seed data for Recipe
+
+pannukakku = Recipe.create(name: "Pannukakku", ingredients: ["6 tablespoons butter", "1 cup flour", "3/4 cup sugar", "4 eggs", "2 cups milk", "1 tablespoon vanilla extract"], 
+directions: "Preheat oven to 350 degrees.
+Melt butter in oven in a 9x13 pan; should be sizzling when you take it out.
+Meanwhile, mix other ingredients like hell - till very frothy. Pour batter into pan with melted butter.
+Bake 40 minutes. Eat immediately.", category_id: breakfast.id)
