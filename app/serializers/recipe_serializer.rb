@@ -1,4 +1,5 @@
 class RecipeSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :name, :directions, :category, :ingredients
+  #belongs_to :category
+  attributes :name, :directions, :category, :category_name, :ingredients
 end

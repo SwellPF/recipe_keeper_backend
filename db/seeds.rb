@@ -16,7 +16,7 @@ dessert = Category.create(name: "Dessert")
 
 # Seed data for Recipe
 
-pannukakku = Recipe.create(name: "Pannukakku", directions: "Preheat oven to 350 degrees.
+pannukakku = Recipe.create(name: "Pannukakku (Finnish Pancake)", directions: "Preheat oven to 350 degrees.
 Melt butter in oven in a 9x13 pan; should be sizzling when you take it out.
 Meanwhile, mix other ingredients like hell - till very frothy. Pour batter into pan with melted butter.
 Bake 40 minutes. Eat immediately.", category_id: breakfast.id)

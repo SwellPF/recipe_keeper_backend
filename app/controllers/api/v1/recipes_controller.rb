@@ -6,14 +6,19 @@ class Api::V1::RecipesController < ApplicationController
     end
 
     def create
-        recipe.new(recipe_params)
-        byebug
+        recipe = Recipe.new(recipe_params)
         if recipe.save
             render json: recipe, status: :accepted
         else
             render json: {errors: recipe.errors.full_messages}, status: unprocessible_entity
         end
     end
+
+    def show
+        recipe = Recipe.find(params[:id])
+        render json: RecipeSerializer.new(recipe)
+    end
+
 
             private
 
