@@ -6,6 +6,7 @@ class Api::V1::RecipesController < ApplicationController
     end
 
     def create
+      #byebug
         recipe = Recipe.new(recipe_params)
         if recipe.save
             render json: RecipeSerializer.new(recipe), status: :accepted
@@ -31,6 +32,6 @@ class Api::V1::RecipesController < ApplicationController
             private
 
             def recipe_params
-                params.require(:recipe).permit(:name, :directions, :category_id, :ingredientList)
+                params.require(:recipe).permit(:name, :directions, :category_id, ingredients:[])
             end
 end
